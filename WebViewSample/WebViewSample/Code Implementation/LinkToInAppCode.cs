@@ -21,7 +21,7 @@ namespace WebViewSample
 				Text = "これは、ユーザーに良い経験を与えながら、あなたのアプリを離れることなくリンクを開く方法を示しています。"
             };
 
-			var button = new Button (){ Text = "HCSに移動する" };
+			var button = new Button (){ Text = "黒部峡谷鉄道に移動する" };
 			button.Clicked += navButtonClicked;
 
 			layout.Children.Add (label);
@@ -34,8 +34,9 @@ namespace WebViewSample
 		/// </summary>
 		void navButtonClicked (object sender, EventArgs e)
 		{
-			this.Navigation.PushAsync (new InAppBrowserCode ("https://www.hcs.co.jp/"));
-            Analytics.TrackEvent("ItemsPage appearing.",new Dictionary<string, string> { { "Category", "Trace" } });
+            Analytics.Enabled = true;
+            Analytics.TrackEvent("ItemsPage appearing.", new Dictionary<string, string> { { "Category", "Trace" } });
+            this.Navigation.PushAsync (new InAppBrowserCode ("http://www.kurotetu.co.jp/"));
         }
 	}
 }

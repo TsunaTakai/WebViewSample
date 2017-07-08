@@ -23,7 +23,7 @@
 	<key>MinimumOSVersion</key>
 	<string>6.0</string>
 	<key>CFBundleDisplayName</key>
-	<string>WebView</string>
+	<string>WebViewSample</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>CFBundleIconFiles</key>
@@ -62,6 +62,6 @@
 		</dict>
 	</dict>
 	<key>CFBundleIdentifier</key>
-	<string>jp.co.hcs.ttakai.WebView</string>
+	<string>jp.co.hcs.ttakai.WebViewSample</string>
 </dict>
 </plist>

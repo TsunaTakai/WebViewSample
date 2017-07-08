@@ -35,8 +35,7 @@ namespace WebViewSample
         {
             // Handle when your app starts
             MobileCenter.Start("android=db116159-5ef0-4124-9ce6-05a9e43f7619;" +
-                   "uwp={Your UWP App secret here};" +
-                   "ios={Your iOS App secret here}",
+                   "ios=6edfbb27-167f-44bc-99e8-0a1b840113b7;",
                    typeof(Analytics), typeof(Crashes));
         }
 
